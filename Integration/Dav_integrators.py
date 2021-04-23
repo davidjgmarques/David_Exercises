@@ -45,7 +45,7 @@ def Simpson(func,low_lim,high_lim,steps):
     I_simp *= (h/3)
     return(I_simp)
 
-# ---------------/ Simpson with sums (no loops) \------------------------
+# ---------------/ Simpson with sums (no loops) \-------------------------
 
 # x = np.linspace(a,b,n_steps+1)
 # func= f1(x)
