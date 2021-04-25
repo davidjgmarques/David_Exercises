@@ -18,6 +18,7 @@ def warp(x):
     elif x < (-2*math.pi):
         x = x + 2*math.pi
     return x
+#This can be substituted with the function 'fmod'
 
 
 #--------------------/ Constants \--------------------
@@ -82,8 +83,9 @@ axs[0].plot(t,theta,'b')
 axs[1].set_title('Omega (t)')
 axs[1].plot(t,omega, 'r')
 axs[2].set_title('System\'s energy')
-axs[2].plot(t,Energy,'g')
-axs[2].plot(t,Energy0,'k')
+axs[2].plot(t,Energy,'g', label= 'RK Energy')
+axs[2].plot(t,Energy0,'k', label='Constant Energy')
+plt.legend()
 plt.show()
 
 
