@@ -10,8 +10,8 @@ Python3
 
 ## Libraries necessary
 
-numpy\ 
-matplotlib\
+numpy  
+matplotlib  
 math
 
 ## Usage
@@ -46,13 +46,13 @@ Pull requests are welcome, as well as verbal comments & tips.
 
 When using **exp=3**:
 
-The user will note that the pendullum's theta angle ($\theta$) will be greater than 2$\pi$.  
-This happens due to the low number of steps used to sample $\theta (t)$, which generates greater variations in $\theta (t)$.
-At this point, $\theta$ is 'warped' back. This results in a $\theta (t)$ with several sharp rises.  
+The user will note that the pendullum's theta angle θ will be greater than 2π.  
+This happens due to the low number of steps used to sample θ(t), which generates greater variations in θ(t).
+At this point, θ is 'warped' back. This results in a θ(t) with several sharp rises.  
 The energy of the system is slowly increasing thus proving the *non energy conservation* of the Runge Kutta method. 
 
 When using **exp=4**:
-The sampling is good enough to avoid great variations of ($\theta$).  
-This results in a correct behaviour of the pendullum, *i.e.*, a variation of ($\theta$) between -90 and 90 degrees.  
+The sampling is good enough to avoid great variations of θ.  
+This results in a correct behaviour of the pendullum, *i.e.*, a variation of θ between -90 and 90 degrees.  
 The energy system also increases in this case, but much slower, due to the larger number of samples.  
 Using **exp>4** has the same result, with the difference of the energy increase being even smaller.
