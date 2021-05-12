@@ -78,6 +78,8 @@ for i in range(len(t)):
 
 fig, axs = plt.subplots(3)
 fig.tight_layout(pad=3.0)
+fig.set_figheight(5)
+fig.set_figwidth(10)
 axs[0].set_title('Theta (t)')
 axs[0].plot(t,theta,'b')
 axs[1].set_title('Omega (t)')
@@ -86,6 +88,6 @@ axs[2].set_title('System\'s energy')
 axs[2].plot(t,Energy,'g', label= 'RK Energy')
 axs[2].plot(t,Energy0,'k', label='Constant Energy')
 plt.legend()
-plt.show()
-
+#plt.show()
+plt.savefig("plots.pdf")
 

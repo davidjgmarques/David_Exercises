@@ -129,6 +129,8 @@ plt.ylabel('(1/15) * (I$_{2N}$ - I$_{N}$)')
 plt.title('Simpson - Approximated error')
 plt.plot(N_iterative,S_error_approx,'o')
 
+plt.savefig("Simpson - Approximated error.pdf")
+
 plot2= plt.figure(2)
 plt.xlabel('N')
 plt.grid()
@@ -137,6 +139,8 @@ plt.yscale('log')
 plt.ylabel('I$_{teo}$ - I$_{N}$')
 plt.title('Simpson - Difference between theoretical and computed value')
 plt.plot(N_iterative,S_error_diff,'o')
+
+plt.savefig("Simpson - Difference between theoretical and computed value.pdf")
 
 plot3= plt.figure(3)
 plt.xlabel('N')
@@ -147,6 +151,8 @@ plt.ylabel('(1/90) * h$^{4} * (f\'\'\'(a) - f\'\'\'(b))$')
 plt.title('Simpson - Theoretical error')
 plt.plot(N_iterative,S_error_teo,'o')
 
+plt.savefig("Simpson - Theoretical error.pdf")
+
 plot4= plt.figure(4)
 plt.xlabel('N')
 plt.grid()
@@ -155,6 +161,8 @@ plt.yscale('log')
 plt.ylabel('(1/3) * (I$_{2N}$ - I$_{N}$)')
 plt.title('Trapezium - Approximated error')
 plt.plot(N_iterative,T_error_approx,'o')
+
+plt.savefig("Trapezium - Approximated error.pdf")
 
 plot5= plt.figure(5)
 plt.xlabel('N')
@@ -165,6 +173,8 @@ plt.ylabel('I$_{teo}$ - I$_{N}$')
 plt.title('Trapezium - Difference between theoretical and computed value')
 plt.plot(N_iterative,T_error_diff,'o')
 
+plt.savefig("Trapezium - Difference between theoretical and computed value.pdf")
+
 plot6= plt.figure(6)
 plt.xlabel('N')
 plt.grid()
@@ -174,4 +184,6 @@ plt.ylabel('(1/12) * h$^{2} * (f\'(a) - f\'(b))$')
 plt.title('Trapezium - Theoretical error')
 plt.plot(N_iterative,T_error_teo,'o')
 
-plt.show()
+plt.savefig("Trapezium - Theoretical error.pdf")
+
+#plt.show()
