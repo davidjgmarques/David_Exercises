@@ -89,5 +89,5 @@ axs[2].plot(t,Energy,'g', label= 'RK Energy')
 axs[2].plot(t,Energy0,'k', label='Constant Energy')
 plt.legend()
 #plt.show()
-plt.savefig("plots.pdf")
+plt.savefig("Results.pdf")
 
